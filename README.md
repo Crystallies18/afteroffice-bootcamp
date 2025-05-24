@@ -12,3 +12,10 @@ POM CONFIGURATION
 
 - To compile and build run command
   mvn clean install
+
+
+  Task 2 : END TO END
+
+  - Add maven Configuration for Lombok, jackson-databind, json-schema-validator
+  - Add Pojo Entity
+  - Add Schema Validation
