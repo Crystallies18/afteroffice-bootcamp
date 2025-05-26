@@ -1,0 +1,7 @@
+<!-- <suite name="E2ESuite" verbose="1" parallel="true" thread-count="5"> -->
+<!--   <test name="E2E"> -->
+<!--     <packages> -->
+<!--       <package name="e2e"></package> -->
+<!--     </packages> -->
+<!--   </test> -->
+<!-- </suite> -->

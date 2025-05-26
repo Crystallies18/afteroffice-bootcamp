@@ -1,0 +1,7 @@
+<!-- <suite name="RestAssuredSuite" verbose="1" parallel="true" thread-count="5"> -->
+<!--     <test name="RestAssuredRegression"> -->
+<!--         <classes> -->
+<!--             <class name="reassured.RestAssuredImpl"/> -->
+<!--         </classes> -->
+<!--     </test> -->
+<!-- </suite> -->
