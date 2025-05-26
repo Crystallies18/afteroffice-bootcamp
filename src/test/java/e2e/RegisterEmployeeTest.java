@@ -53,7 +53,7 @@ public class RegisterEmployeeTest {
         assert response.getStatusCode() == 200 : "Status code add employee must be 200";
         
         // assert schema
-//        response.then().assertThat().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("add_employee_schema.json"));
+        response.then().assertThat().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("add_employee_schema.json"));
         
         List<EmployeeResponseEntity> addEmployeeUpdateResponse = objectMapper.readValue(response.body().asString(),
         		new TypeReference<List<EmployeeResponseEntity>>() {
