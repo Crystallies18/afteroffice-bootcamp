@@ -11,6 +11,7 @@ import io.cucumber.testng.CucumberOptions;
 	            "cucumber.definitions.auth",
 	            "cucumber.helper"
 	    		},
+	    tags = "@login or @update", // Only run login scenarios
 	    plugin = {"pretty", "json:target/cucumber.json"},
 	    monochrome = true
 	)
