@@ -19,3 +19,19 @@ POM CONFIGURATION
   - Add maven Configuration for Lombok, jackson-databind, json-schema-validator
   - Add Pojo Entity
   - Add Schema Validation
+  
+  Task 3 : Cucumber + Refactor
+  
+  - Add maven Configuration for cucumber , generate cucumber-reporting
+  - Make scenario with cucumber by adding file with .features extension
+  - Add new package for cucumber :
+  	Package Definitions
+   	 - apiService : for grouping request endpoint method
+   	 - auth : definitions for token
+   	 - common : definitions for calling api service
+   	 - employee : definition for validation of scenario
+   	Package helper
+   	 - For generate report
+   	 - For adding TestContext
+   	Package Runner
+   	 - cucumber TestNG runner   	 
