@@ -12,7 +12,7 @@ public class AuthenticationSteps {
 	
 	@Then("Save the token from the response to local storage")
 	public void saveToken() {
-	    // Extract the token from the first object in the array
+	   
 	    List<Map<String, String>> tokenList = TestContext.response.jsonPath().getList("$");
 	    if (tokenList == null || tokenList.isEmpty()) {
 	        throw new IllegalStateException("Token list is empty in the login response");
@@ -27,8 +27,6 @@ public class AuthenticationSteps {
 	    TestContext.token = token;
 	    System.out.println("Saved token: " + TestContext.token);
 	}
-
-
 
     @Given("Make sure token in local storage not empty")
     public void checkTokenExists() {
