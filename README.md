@@ -34,4 +34,11 @@ POM CONFIGURATION
    	 - For generate report
    	 - For adding TestContext
    	Package Runner
-   	 - cucumber TestNG runner   	 
+   	 - cucumber TestNG runner   
+   	 
+  Task 4 : Selenium Web Driver 
+  
+  - Add maven Configuration for cucumber
+  - Add chromedrive in resource
+  - Add new Package for seleniumE2E
+    - CheckOutItem class : scenario checkout	 

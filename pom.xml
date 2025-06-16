@@ -65,6 +65,12 @@
             <artifactId>cucumber-reporting</artifactId>
             <version>5.7.0</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.33.0</version>
+        </dependency>
     </dependencies>
     <build>
         <!-- To define the plugin version in your parent POM -->
@@ -75,10 +81,9 @@
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>3.5.3</version>
                     <configuration>
-                        <forkCount>0</forkCount>
+                        <forkCount>1</forkCount>
                         <suiteXmlFiles>
-                         <suiteXmlFile>src/test/resources/cucumber_suite.xml</suiteXmlFile>
-                          
+                         <suiteXmlFile>src/test/resources/selenium_checkout.xml</suiteXmlFile>
                         </suiteXmlFiles>
                     </configuration>
                 </plugin>
