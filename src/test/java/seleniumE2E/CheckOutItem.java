@@ -75,15 +75,18 @@ public class CheckOutItem {
     @Test(dependsOnMethods = "verifyDataProductInProductViewPage")
     public void doATCAndOpenCartPage() throws Exception {
     	
+    	
+    	sleep(2L);
     	System.out.println("doATCAndOpenCartPage..");
     	
-    	WebElement buttonAddToCart = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("add-to-cart-sauce-labs-backpack")));
-    	WebElement buttonAddToCart2 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("add-to-cart-sauce-labs-bolt-t-shirt")));
- 
-    	System.out.println(buttonAddToCart.isDisplayed());
-        
-        buttonAddToCart.click();
-        buttonAddToCart2.click();
+    	WebElement buttonAddToCart = wait.until(ExpectedConditions.elementToBeClickable(By.id("add-to-cart-sauce-labs-backpack")));
+    	buttonAddToCart.click();
+    	wait.until(ExpectedConditions.presenceOfElementLocated(By.id("remove-sauce-labs-backpack")));
+
+    	WebElement buttonAddToCart2 = wait.until(ExpectedConditions.elementToBeClickable(By.id("add-to-cart-sauce-labs-bolt-t-shirt")));
+    	buttonAddToCart2.click();
+    	wait.until(ExpectedConditions.presenceOfElementLocated(By.id("remove-sauce-labs-bolt-t-shirt")));
+
         
        	WebElement labelCart = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("shopping_cart_container")));
         
@@ -104,7 +107,6 @@ public class CheckOutItem {
     	sleep(2L);
     	
     	System.out.println("doCheckout..");
-    	
         WebElement buttonCheckout = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(), 'Checkout')]")));
 
         buttonCheckout.click();
