@@ -83,7 +83,7 @@
                     <configuration>
                         <forkCount>1</forkCount>
                         <suiteXmlFiles>
-                         <suiteXmlFile>src/test/resources/selenium_checkout.xml</suiteXmlFile>
+                         <suiteXmlFile>src/test/resources/runner_regression_cucumber.xml</suiteXmlFile>
                         </suiteXmlFiles>
                     </configuration>
                 </plugin>

@@ -41,4 +41,12 @@ POM CONFIGURATION
   - Add maven Configuration for cucumber
   - Add chromedrive in resource
   - Add new Package for seleniumE2E
-    - CheckOutItem class : scenario checkout	 
+    - CheckOutItem class : scenario checkout
+    
+  Task 5 : CUCUMBER + Selenium Web Driver + Page Object Model
+  - Add base class in main java : selenium_page_factory
+  - Add feature for checkout Item in resource
+  - Add package : 
+      1. Object reposity for variable object that can be used
+      2. Page Repository for method in every page
+      3. test suit package : to definition the feauture
